@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminar Schedule</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        @media (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            th {
+                display: none;
+            }
+            tr {
+                margin-bottom: 15px;
+            }
+            td {
+                text-align: left;
+                padding-left: 50%;
+                position: relative;
+            }
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                text-align: left;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <th>Day</th>
+            <th colspan="2">Seminar</th> <!-- Merged header for Seminar -->
+        </tr>
+        <tr>
+            <th></th>
+            <th>Schedule</th> <!-- Sub-header for Schedule -->
+            <th>Topic</th>    <!-- Sub-header for Topic -->
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-label="Day" rowspan="5">Monday</td> <!-- rowspan for Monday -->
+            <td data-label="Schedule">9:00 AM - 10:00 AM</td>
+            <td data-label="Topic">Math Class</td>
+        </tr>
+        <tr>
+            <td data-label="Schedule">10:15 AM - 11:15 AM</td>
+            <td data-label="Topic">Science Class</td>
+        </tr>
+        <tr>
+            <td data-label="Schedule">11:30 AM - 12:30 PM</td>
+            <td data-label="Topic">History Class</td>
+        </tr>
+        <tr>
+            <td data-label="Schedule">1:00 PM - 2:00 PM</td>
+            <td data-label="Topic">Art Class</td>
+        </tr>
+        <tr>
+            <td data-label="Schedule">2:15 PM - 3:15 PM</td>
+            <td data-label="Topic">Physical Education</td>
+        </tr>
+        
+        <tr>
+            <td data-label="Day" rowspan="5">Tuesday</td> <!-- rowspan for Tuesday -->
+            <td data-label="Schedule">9:00 AM - 10:00 AM</td>
+            <td data-label="Topic">English Class</td>
+        </tr>
+        <tr>
+            <td data-label="Schedule">10:15 AM - 11:15 AM</td>
+            <td data-label="Topic">Biology Class</td>
+        </tr>
+        <tr>
+            <td data-label="Schedule">11:30 AM - 12:30 PM</td>
+            <td data-label="Topic">Geography Class</td>
+        </tr>
+        <tr>
+            <td data-label="Schedule">1:00 PM - 2:00 PM</td>
+            <td data-label="Topic">Music Class</td>
+        </tr>
+        <tr>
+            <td data-label="Schedule">2:15 PM - 3:15 PM</td>
+            <td data-label="Topic">Drama Class</td>
+        </tr>
+
+        <tr>
+            <td data-label="Day" rowspan="5">Wednesday</td> <!-- rowspan for Wednesday -->
+            <td data-label="Schedule">9:00 AM - 10:00 AM</td>
+            <td data-label="Topic">Math Class</td>
+        </tr>
+        <tr>
+            <td data-label="Schedule">10:15 AM - 11:15 AM</td>
+            <td data-label="Topic">Physics Class</td>
+        </tr>
+        <tr>
+            <td data-label="Schedule">11:30 AM - 12:30 PM</td>
+            <td data-label="Topic">History Class</td>
+        </tr>
+        <tr>
+            <td data-label="Schedule">1:00 PM - 2:00 PM</td>
+            <td data-label="Topic">Art Class</td>
+        </tr>
+        <tr>
+            <td data-label="Schedule">2:15 PM - 3:15 PM</td>
+            <td data-label="Topic">Physical Education</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
